@@ -41,6 +41,7 @@
 -(void)mosaicViewDidTouch:(NSNotification *)aNotification{
     MosaicDataView *aView = [aNotification.userInfo objectForKey:@"mosaicDataView"];
     if (aView != self){
+        //  This gets called when another MosaicDataView gets selected
     }
 }
 
@@ -195,11 +196,6 @@
     BOOL retVal = [super gestureRecognizerShouldBegin:gestureRecognizer];
     [self displayHighlightAnimation];
     return retVal;
-}
-
--(void)removeFromSuperview{
-    [[NSNotificationCenter defaultCenter] removeObserver:self];
-    [super removeFromSuperview];
 }
 
 @end
