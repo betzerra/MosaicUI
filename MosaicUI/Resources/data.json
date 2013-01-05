@@ -1,0 +1,47 @@
+ [
+  {
+    "imageFilename": "001.jpg",
+    "size": 1,
+    "title": "Seagud"
+  },
+  {
+  "imageFilename": "002.jpg",
+  "size": 0,
+  "title": "What now?"
+  },
+  {
+  "imageFilename": "003.jpg",
+  "size": 2,
+  "title": ""
+  },
+  {
+  "imageFilename": "004.jpg",
+  "size": 1,
+  "title": "Hope"
+  },
+  {
+  "imageFilename": "006.jpg",
+  "size": 1,
+  "title": "Graffiti"
+  },
+  {
+  "imageFilename": "007.jpg",
+  "size": 1,
+  "title": "New T-Shirt"
+  },
+  {
+  "imageFilename": "005.jpg",
+  "size": 2,
+  "title": ""
+  },
+  {
+  "imageFilename": "008.jpg",
+  "size": 2,
+  "title": ""
+  },
+  {
+  "imageFilename": "009.jpg",
+  "size": 2,
+  "title": ""
+  }
+]
