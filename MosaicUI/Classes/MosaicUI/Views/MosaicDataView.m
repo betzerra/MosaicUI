@@ -62,6 +62,7 @@
     UIImage *anImage = [UIImage imageNamed:self.module.imageFilename];
     imageView.image = anImage;
     
+    //  Resize the image according to its aspect ratio so that it fits on its container, and finally re-center it
     float scale = 1;
     
     if (anImage.size.width < anImage.size.height){
@@ -97,7 +98,8 @@
 
 -(void)displayHighlightAnimation{
     if (self.mosaicView.selectedDataView != self){
-        // Notify to the rest of MosaicDataView to show the overlayView again
+        //  Notify to the rest of MosaicDataView which is the selected MosaicDataView
+        //  (Usefull is you need to deselect some MosaicDataView)
         NSDictionary *aDict = @{@"mosaicDataView" : self};
         [[NSNotificationCenter defaultCenter] postNotificationName:kMosaicDataViewDidTouchNotification
                                                             object:nil
