@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6741716F1634B6AF002A8B4A"
-               BuildableName = "MosaicUI.app"
-               BlueprintName = "MosaicUI"
-               ReferencedContainer = "container:MosaicUI.xcodeproj">
+               BuildableName = "ExampleMosaicUI.app"
+               BlueprintName = "ExampleMosaicUI"
+               ReferencedContainer = "container:ExampleMosaicUI.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6741716F1634B6AF002A8B4A"
-            BuildableName = "MosaicUI.app"
-            BlueprintName = "MosaicUI"
-            ReferencedContainer = "container:MosaicUI.xcodeproj">
+            BuildableName = "ExampleMosaicUI.app"
+            BlueprintName = "ExampleMosaicUI"
+            ReferencedContainer = "container:ExampleMosaicUI.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -52,9 +52,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6741716F1634B6AF002A8B4A"
-            BuildableName = "MosaicUI.app"
-            BlueprintName = "MosaicUI"
-            ReferencedContainer = "container:MosaicUI.xcodeproj">
+            BuildableName = "ExampleMosaicUI.app"
+            BlueprintName = "ExampleMosaicUI"
+            ReferencedContainer = "container:ExampleMosaicUI.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -70,9 +70,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6741716F1634B6AF002A8B4A"
-            BuildableName = "MosaicUI.app"
-            BlueprintName = "MosaicUI"
-            ReferencedContainer = "container:MosaicUI.xcodeproj">
+            BuildableName = "ExampleMosaicUI.app"
+            BlueprintName = "ExampleMosaicUI"
+            ReferencedContainer = "container:ExampleMosaicUI.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
