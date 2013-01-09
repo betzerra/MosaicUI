@@ -195,7 +195,23 @@
 
 - (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer{
     //  Display the animation no matter if the gesture fails or not
-    BOOL retVal = [super gestureRecognizerShouldBegin:gestureRecognizer];
+    BOOL retVal = YES;
+    
+    /*  From http://developer.apple.com NSObject class reference
+     *  You cannot test whether an object inherits a method from its superclass by sending respondsToSelector:
+     *  to the object using the super keyword. This method will still be testing the object as a whole, not just 
+     *  the superclass’s implementation. Therefore, sending respondsToSelector: to super is equivalent to sending 
+     *  it to self. Instead, you must invoke the NSObject class method instancesRespondToSelector: directly on 
+     *  the object’s superclass */
+    
+    SEL aSel = @selector(gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:);
+    
+    /*  You cannot simply use [[self superclass] instancesRespondToSelector:@selector(aMethod)] 
+     *  since this may cause the method to fail if it is invoked by a subclass. */
+    
+    if ([UIView instancesRespondToSelector:aSel]){
+        retVal = [super gestureRecognizerShouldBegin:gestureRecognizer];
+    }
     [self displayHighlightAnimation];
     return retVal;
 }
