@@ -195,7 +195,10 @@
 
 - (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer{
     //  Display the animation no matter if the gesture fails or not
-    BOOL retVal = [super gestureRecognizerShouldBegin:gestureRecognizer];
+    BOOL  retVal = YES;
+    if ([self.superview respondsToSelector:@selector(gestureRecognizerShouldBegin:)]) {
+        retVal = [self.superview gestureRecognizerShouldBegin:gestureRecognizer];
+    }
     [self displayHighlightAnimation];
     return retVal;
 }
