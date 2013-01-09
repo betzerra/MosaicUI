@@ -26,3 +26,6 @@ You can customize how it looks by overriding the **MosaicDataView** class.
 Help me to improve **MosaicUI** and tell me what do you think about it
 
 Follow me on twitter at **@betzerra** or email me at ezequiel@betzerra.com.ar
+
+##License
+This project is under MIT License. See LICENSE file for more information.
