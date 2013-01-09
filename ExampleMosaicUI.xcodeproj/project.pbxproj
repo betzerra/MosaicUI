@@ -1,0 +1,459 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		671DDAEF169CB04B00FA2CAC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 671DDAC1169CB04B00FA2CAC /* AppDelegate.m */; };
+		671DDAF0169CB04B00FA2CAC /* CustomMosaicDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = 671DDAC5169CB04B00FA2CAC /* CustomMosaicDatasource.m */; };
+		671DDAF5169CB04B00FA2CAC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 671DDAD7169CB04B00FA2CAC /* ViewController.m */; };
+		671DDAF6169CB04B00FA2CAC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 671DDAD8169CB04B00FA2CAC /* Default-568h@2x.png */; };
+		671DDAF7169CB04B00FA2CAC /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 671DDAD9169CB04B00FA2CAC /* Default.png */; };
+		671DDAF8169CB04B00FA2CAC /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 671DDADA169CB04B00FA2CAC /* Default@2x.png */; };
+		671DDAF9169CB04B00FA2CAC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 671DDADB169CB04B00FA2CAC /* InfoPlist.strings */; };
+		671DDAFA169CB04B00FA2CAC /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 671DDADD169CB04B00FA2CAC /* MainStoryboard.storyboard */; };
+		671DDAFB169CB04B00FA2CAC /* ExampleMosaicUI-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 671DDADF169CB04B00FA2CAC /* ExampleMosaicUI-Info.plist */; };
+		671DDAFC169CB04B00FA2CAC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 671DDAE1169CB04B00FA2CAC /* main.m */; };
+		671DDAFD169CB04B00FA2CAC /* 001.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 671DDAE4169CB04B00FA2CAC /* 001.jpg */; };
+		671DDAFE169CB04B00FA2CAC /* 002.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 671DDAE5169CB04B00FA2CAC /* 002.jpg */; };
+		671DDAFF169CB04B00FA2CAC /* 003.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 671DDAE6169CB04B00FA2CAC /* 003.jpg */; };
+		671DDB00169CB04B00FA2CAC /* 004.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 671DDAE7169CB04B00FA2CAC /* 004.jpg */; };
+		671DDB01169CB04B00FA2CAC /* 005.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 671DDAE8169CB04B00FA2CAC /* 005.jpg */; };
+		671DDB02169CB04B00FA2CAC /* 006.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 671DDAE9169CB04B00FA2CAC /* 006.jpg */; };
+		671DDB03169CB04B00FA2CAC /* 007.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 671DDAEA169CB04B00FA2CAC /* 007.jpg */; };
+		671DDB04169CB04B00FA2CAC /* 008.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 671DDAEB169CB04B00FA2CAC /* 008.jpg */; };
+		671DDB05169CB04B00FA2CAC /* 009.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 671DDAEC169CB04B00FA2CAC /* 009.jpg */; };
+		671DDB06169CB04B00FA2CAC /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 671DDAED169CB04B00FA2CAC /* data.json */; };
+		671DDB07169CB04B00FA2CAC /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 671DDAEE169CB04B00FA2CAC /* Storyboard.storyboard */; };
+		671DDB17169CB0C300FA2CAC /* MosaicData.m in Sources */ = {isa = PBXBuildFile; fileRef = 671DDB0B169CB0C300FA2CAC /* MosaicData.m */; };
+		671DDB18169CB0C300FA2CAC /* TwoDimentionalArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 671DDB0E169CB0C300FA2CAC /* TwoDimentionalArray.m */; };
+		671DDB19169CB0C300FA2CAC /* MosaicDataView.m in Sources */ = {isa = PBXBuildFile; fileRef = 671DDB14169CB0C300FA2CAC /* MosaicDataView.m */; };
+		671DDB1A169CB0C300FA2CAC /* MosaicView.m in Sources */ = {isa = PBXBuildFile; fileRef = 671DDB16169CB0C300FA2CAC /* MosaicView.m */; };
+		674171751634B6AF002A8B4A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 674171741634B6AF002A8B4A /* UIKit.framework */; };
+		674171771634B6AF002A8B4A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 674171761634B6AF002A8B4A /* Foundation.framework */; };
+		674171791634B6AF002A8B4A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 674171781634B6AF002A8B4A /* CoreGraphics.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		671DDAC0169CB04B00FA2CAC /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		671DDAC1169CB04B00FA2CAC /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		671DDAC4169CB04B00FA2CAC /* CustomMosaicDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomMosaicDatasource.h; sourceTree = "<group>"; };
+		671DDAC5169CB04B00FA2CAC /* CustomMosaicDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomMosaicDatasource.m; sourceTree = "<group>"; };
+		671DDAD6169CB04B00FA2CAC /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		671DDAD7169CB04B00FA2CAC /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		671DDAD8169CB04B00FA2CAC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		671DDAD9169CB04B00FA2CAC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		671DDADA169CB04B00FA2CAC /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		671DDADC169CB04B00FA2CAC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		671DDADE169CB04B00FA2CAC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		671DDADF169CB04B00FA2CAC /* ExampleMosaicUI-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ExampleMosaicUI-Info.plist"; sourceTree = "<group>"; };
+		671DDAE0169CB04B00FA2CAC /* ExampleMosaicUI-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ExampleMosaicUI-Prefix.pch"; sourceTree = "<group>"; };
+		671DDAE1169CB04B00FA2CAC /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		671DDAE4169CB04B00FA2CAC /* 001.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 001.jpg; sourceTree = "<group>"; };
+		671DDAE5169CB04B00FA2CAC /* 002.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 002.jpg; sourceTree = "<group>"; };
+		671DDAE6169CB04B00FA2CAC /* 003.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 003.jpg; sourceTree = "<group>"; };
+		671DDAE7169CB04B00FA2CAC /* 004.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 004.jpg; sourceTree = "<group>"; };
+		671DDAE8169CB04B00FA2CAC /* 005.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 005.jpg; sourceTree = "<group>"; };
+		671DDAE9169CB04B00FA2CAC /* 006.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 006.jpg; sourceTree = "<group>"; };
+		671DDAEA169CB04B00FA2CAC /* 007.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 007.jpg; sourceTree = "<group>"; };
+		671DDAEB169CB04B00FA2CAC /* 008.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 008.jpg; sourceTree = "<group>"; };
+		671DDAEC169CB04B00FA2CAC /* 009.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 009.jpg; sourceTree = "<group>"; };
+		671DDAED169CB04B00FA2CAC /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		671DDAEE169CB04B00FA2CAC /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		671DDB0A169CB0C300FA2CAC /* MosaicData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MosaicData.h; sourceTree = "<group>"; };
+		671DDB0B169CB0C300FA2CAC /* MosaicData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MosaicData.m; sourceTree = "<group>"; };
+		671DDB0D169CB0C300FA2CAC /* TwoDimentionalArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoDimentionalArray.h; sourceTree = "<group>"; };
+		671DDB0E169CB0C300FA2CAC /* TwoDimentionalArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoDimentionalArray.m; sourceTree = "<group>"; };
+		671DDB10169CB0C300FA2CAC /* MosaicViewDatasourceProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MosaicViewDatasourceProtocol.h; sourceTree = "<group>"; };
+		671DDB11169CB0C300FA2CAC /* MosaicViewDelegateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MosaicViewDelegateProtocol.h; sourceTree = "<group>"; };
+		671DDB13169CB0C300FA2CAC /* MosaicDataView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MosaicDataView.h; sourceTree = "<group>"; };
+		671DDB14169CB0C300FA2CAC /* MosaicDataView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MosaicDataView.m; sourceTree = "<group>"; };
+		671DDB15169CB0C300FA2CAC /* MosaicView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MosaicView.h; sourceTree = "<group>"; };
+		671DDB16169CB0C300FA2CAC /* MosaicView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MosaicView.m; sourceTree = "<group>"; };
+		674171701634B6AF002A8B4A /* ExampleMosaicUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleMosaicUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		674171741634B6AF002A8B4A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		674171761634B6AF002A8B4A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		674171781634B6AF002A8B4A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6741716D1634B6AF002A8B4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				674171751634B6AF002A8B4A /* UIKit.framework in Frameworks */,
+				674171771634B6AF002A8B4A /* Foundation.framework in Frameworks */,
+				674171791634B6AF002A8B4A /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		671DDABF169CB04B00FA2CAC /* ExampleMosaicUI */ = {
+			isa = PBXGroup;
+			children = (
+				671DDAC0169CB04B00FA2CAC /* AppDelegate.h */,
+				671DDAC1169CB04B00FA2CAC /* AppDelegate.m */,
+				671DDAC2169CB04B00FA2CAC /* Classes */,
+				671DDAD8169CB04B00FA2CAC /* Default-568h@2x.png */,
+				671DDAD9169CB04B00FA2CAC /* Default.png */,
+				671DDADA169CB04B00FA2CAC /* Default@2x.png */,
+				671DDADB169CB04B00FA2CAC /* InfoPlist.strings */,
+				671DDADD169CB04B00FA2CAC /* MainStoryboard.storyboard */,
+				671DDADF169CB04B00FA2CAC /* ExampleMosaicUI-Info.plist */,
+				671DDAE0169CB04B00FA2CAC /* ExampleMosaicUI-Prefix.pch */,
+				671DDAE1169CB04B00FA2CAC /* main.m */,
+				671DDAE2169CB04B00FA2CAC /* Resources */,
+				671DDAEE169CB04B00FA2CAC /* Storyboard.storyboard */,
+			);
+			path = ExampleMosaicUI;
+			sourceTree = "<group>";
+		};
+		671DDAC2169CB04B00FA2CAC /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				671DDAC3169CB04B00FA2CAC /* Logic */,
+				671DDAD5169CB04B00FA2CAC /* ViewControllers */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		671DDAC3169CB04B00FA2CAC /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				671DDAC4169CB04B00FA2CAC /* CustomMosaicDatasource.h */,
+				671DDAC5169CB04B00FA2CAC /* CustomMosaicDatasource.m */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		671DDAD5169CB04B00FA2CAC /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				671DDAD6169CB04B00FA2CAC /* ViewController.h */,
+				671DDAD7169CB04B00FA2CAC /* ViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		671DDAE2169CB04B00FA2CAC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				671DDAE3169CB04B00FA2CAC /* Assets */,
+				671DDAED169CB04B00FA2CAC /* data.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		671DDAE3169CB04B00FA2CAC /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				671DDAE4169CB04B00FA2CAC /* 001.jpg */,
+				671DDAE5169CB04B00FA2CAC /* 002.jpg */,
+				671DDAE6169CB04B00FA2CAC /* 003.jpg */,
+				671DDAE7169CB04B00FA2CAC /* 004.jpg */,
+				671DDAE8169CB04B00FA2CAC /* 005.jpg */,
+				671DDAE9169CB04B00FA2CAC /* 006.jpg */,
+				671DDAEA169CB04B00FA2CAC /* 007.jpg */,
+				671DDAEB169CB04B00FA2CAC /* 008.jpg */,
+				671DDAEC169CB04B00FA2CAC /* 009.jpg */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		671DDB08169CB0C300FA2CAC /* MosaicUI */ = {
+			isa = PBXGroup;
+			children = (
+				671DDB09169CB0C300FA2CAC /* Entities */,
+				671DDB0C169CB0C300FA2CAC /* Logic */,
+				671DDB0F169CB0C300FA2CAC /* Protocols */,
+				671DDB12169CB0C300FA2CAC /* Views */,
+			);
+			path = MosaicUI;
+			sourceTree = "<group>";
+		};
+		671DDB09169CB0C300FA2CAC /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				671DDB0A169CB0C300FA2CAC /* MosaicData.h */,
+				671DDB0B169CB0C300FA2CAC /* MosaicData.m */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		671DDB0C169CB0C300FA2CAC /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				671DDB0D169CB0C300FA2CAC /* TwoDimentionalArray.h */,
+				671DDB0E169CB0C300FA2CAC /* TwoDimentionalArray.m */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		671DDB0F169CB0C300FA2CAC /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				671DDB10169CB0C300FA2CAC /* MosaicViewDatasourceProtocol.h */,
+				671DDB11169CB0C300FA2CAC /* MosaicViewDelegateProtocol.h */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		671DDB12169CB0C300FA2CAC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				671DDB13169CB0C300FA2CAC /* MosaicDataView.h */,
+				671DDB14169CB0C300FA2CAC /* MosaicDataView.m */,
+				671DDB15169CB0C300FA2CAC /* MosaicView.h */,
+				671DDB16169CB0C300FA2CAC /* MosaicView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		674171651634B6AF002A8B4A = {
+			isa = PBXGroup;
+			children = (
+				671DDB08169CB0C300FA2CAC /* MosaicUI */,
+				671DDABF169CB04B00FA2CAC /* ExampleMosaicUI */,
+				674171731634B6AF002A8B4A /* Frameworks */,
+				674171711634B6AF002A8B4A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		674171711634B6AF002A8B4A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				674171701634B6AF002A8B4A /* ExampleMosaicUI.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		674171731634B6AF002A8B4A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				674171741634B6AF002A8B4A /* UIKit.framework */,
+				674171761634B6AF002A8B4A /* Foundation.framework */,
+				674171781634B6AF002A8B4A /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6741716F1634B6AF002A8B4A /* ExampleMosaicUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 674171941634B6AF002A8B4A /* Build configuration list for PBXNativeTarget "ExampleMosaicUI" */;
+			buildPhases = (
+				6741716C1634B6AF002A8B4A /* Sources */,
+				6741716D1634B6AF002A8B4A /* Frameworks */,
+				6741716E1634B6AF002A8B4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ExampleMosaicUI;
+			productName = MosaicUI;
+			productReference = 674171701634B6AF002A8B4A /* ExampleMosaicUI.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		674171671634B6AF002A8B4A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = betzerra;
+			};
+			buildConfigurationList = 6741716A1634B6AF002A8B4A /* Build configuration list for PBXProject "ExampleMosaicUI" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 674171651634B6AF002A8B4A;
+			productRefGroup = 674171711634B6AF002A8B4A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6741716F1634B6AF002A8B4A /* ExampleMosaicUI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6741716E1634B6AF002A8B4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				671DDAF6169CB04B00FA2CAC /* Default-568h@2x.png in Resources */,
+				671DDAF7169CB04B00FA2CAC /* Default.png in Resources */,
+				671DDAF8169CB04B00FA2CAC /* Default@2x.png in Resources */,
+				671DDAF9169CB04B00FA2CAC /* InfoPlist.strings in Resources */,
+				671DDAFA169CB04B00FA2CAC /* MainStoryboard.storyboard in Resources */,
+				671DDAFB169CB04B00FA2CAC /* ExampleMosaicUI-Info.plist in Resources */,
+				671DDAFD169CB04B00FA2CAC /* 001.jpg in Resources */,
+				671DDAFE169CB04B00FA2CAC /* 002.jpg in Resources */,
+				671DDAFF169CB04B00FA2CAC /* 003.jpg in Resources */,
+				671DDB00169CB04B00FA2CAC /* 004.jpg in Resources */,
+				671DDB01169CB04B00FA2CAC /* 005.jpg in Resources */,
+				671DDB02169CB04B00FA2CAC /* 006.jpg in Resources */,
+				671DDB03169CB04B00FA2CAC /* 007.jpg in Resources */,
+				671DDB04169CB04B00FA2CAC /* 008.jpg in Resources */,
+				671DDB05169CB04B00FA2CAC /* 009.jpg in Resources */,
+				671DDB06169CB04B00FA2CAC /* data.json in Resources */,
+				671DDB07169CB04B00FA2CAC /* Storyboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6741716C1634B6AF002A8B4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				671DDAEF169CB04B00FA2CAC /* AppDelegate.m in Sources */,
+				671DDAF0169CB04B00FA2CAC /* CustomMosaicDatasource.m in Sources */,
+				671DDAF5169CB04B00FA2CAC /* ViewController.m in Sources */,
+				671DDAFC169CB04B00FA2CAC /* main.m in Sources */,
+				671DDB17169CB0C300FA2CAC /* MosaicData.m in Sources */,
+				671DDB18169CB0C300FA2CAC /* TwoDimentionalArray.m in Sources */,
+				671DDB19169CB0C300FA2CAC /* MosaicDataView.m in Sources */,
+				671DDB1A169CB0C300FA2CAC /* MosaicView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		671DDADB169CB04B00FA2CAC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				671DDADC169CB04B00FA2CAC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		671DDADD169CB04B00FA2CAC /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				671DDADE169CB04B00FA2CAC /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		674171921634B6AF002A8B4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		674171931634B6AF002A8B4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		674171951634B6AF002A8B4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ExampleMosaicUI/ExampleMosaicUI-Prefix.pch";
+				INFOPLIST_FILE = "ExampleMosaicUI/ExampleMosaicUI-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = ExampleMosaicUI;
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		674171961634B6AF002A8B4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ExampleMosaicUI/ExampleMosaicUI-Prefix.pch";
+				INFOPLIST_FILE = "ExampleMosaicUI/ExampleMosaicUI-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = ExampleMosaicUI;
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6741716A1634B6AF002A8B4A /* Build configuration list for PBXProject "ExampleMosaicUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				674171921634B6AF002A8B4A /* Debug */,
+				674171931634B6AF002A8B4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		674171941634B6AF002A8B4A /* Build configuration list for PBXNativeTarget "ExampleMosaicUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				674171951634B6AF002A8B4A /* Debug */,
+				674171961634B6AF002A8B4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 674171671634B6AF002A8B4A /* Project object */;
+}
