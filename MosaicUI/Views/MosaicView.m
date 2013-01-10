@@ -128,6 +128,9 @@
             retVal = CGSizeMake(2, 2);
             break;
         case 2:
+            retVal = CGSizeMake(2, 1);
+            break;
+        case 3:
             retVal = CGSizeMake(1, 1);
             break;
             

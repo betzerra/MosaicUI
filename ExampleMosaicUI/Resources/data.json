@@ -12,7 +12,7 @@
   {
   "imageFilename": "003.jpg",
   "size": 2,
-  "title": ""
+  "title": "San Diego"
   },
   {
   "imageFilename": "004.jpg",
@@ -32,16 +32,16 @@
   {
   "imageFilename": "005.jpg",
   "size": 2,
-  "title": ""
+  "title": "San Francisco"
   },
   {
   "imageFilename": "008.jpg",
   "size": 2,
-  "title": ""
+  "title": "San Francisco"
   },
   {
   "imageFilename": "009.jpg",
-  "size": 2,
-  "title": ""
+  "size": 3,
+  "title": "SFO"
   }
 ]

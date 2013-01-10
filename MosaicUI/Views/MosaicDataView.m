@@ -28,6 +28,9 @@
             retVal = [UIFont fontWithName:kMosaicDataViewFont size:18];
             break;
         case 2:
+            retVal = [UIFont fontWithName:kMosaicDataViewFont size:18];
+            break;
+        case 3:
             retVal = [UIFont fontWithName:kMosaicDataViewFont size:15];
             break;
         default:
@@ -62,19 +65,33 @@
     UIImage *anImage = [UIImage imageNamed:self.module.imageFilename];
     imageView.image = anImage;
     
-    //  Resize the image according to its aspect ratio so that it fits on its container, and finally re-center it
-    float scale = 1;
-    
+    CGSize imgFinalSize = CGSizeZero;
+
     if (anImage.size.width < anImage.size.height){
-        scale = anImage.size.width / anImage.size.height;
+        imgFinalSize.width = self.bounds.size.width;
+        imgFinalSize.height = self.bounds.size.width * anImage.size.height / anImage.size.width;
+        
+        //  This is to avoid black bars on the bottom and top of the image
+        //  Happens when images have its height lesser than its bounds
+        if (imgFinalSize.height < self.bounds.size.height){
+            imgFinalSize.width = self.bounds.size.height * self.bounds.size.width / imgFinalSize.height;
+            imgFinalSize.height = self.bounds.size.height;
+        }
     }else{
-        scale = anImage.size.height / anImage.size.width;
+        imgFinalSize.height = self.bounds.size.height;
+        imgFinalSize.width = self.bounds.size.height * anImage.size.width / anImage.size.height;
+        
+        //  This is to avoid black bars on the left and right of the image
+        //  Happens when images have its width lesser than its bounds
+        if (imgFinalSize.width < self.bounds.size.width){
+            imgFinalSize.height = self.bounds.size.height * self.bounds.size.width / imgFinalSize.height;
+            imgFinalSize.width = self.bounds.size.width;
+        }
     }
     
-    CGRect newFrame = imageView.frame;
-    newFrame.size.height /= scale;
-    newFrame.size.width /= scale;
-    imageView.frame = newFrame;
+    NSLog(@"#DEBUG imageRect %.2f %.2f (%.2f %.2f) %@", imgFinalSize.width, imgFinalSize.height, anImage.size.width, anImage.size.height, newModule);
+    
+    imageView.frame = CGRectMake(0, 0, imgFinalSize.width, imgFinalSize.height);
     imageView.center = CGPointMake(self.frame.size.width/2, self.frame.size.height/2);
     
     //  Set new title
