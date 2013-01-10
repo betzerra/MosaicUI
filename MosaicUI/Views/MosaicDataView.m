@@ -89,7 +89,7 @@
         }
     }
     
-    NSLog(@"#DEBUG imageRect %.2f %.2f (%.2f %.2f) %@", imgFinalSize.width, imgFinalSize.height, anImage.size.width, anImage.size.height, newModule);
+//    NSLog(@"#DEBUG imageRect %.2f %.2f (%.2f %.2f) %@", imgFinalSize.width, imgFinalSize.height, anImage.size.width, anImage.size.height, newModule);
     
     imageView.frame = CGRectMake(0, 0, imgFinalSize.width, imgFinalSize.height);
     imageView.center = CGPointMake(self.frame.size.width/2, self.frame.size.height/2);
