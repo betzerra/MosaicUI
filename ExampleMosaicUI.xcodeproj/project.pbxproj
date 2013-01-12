@@ -15,7 +15,6 @@
 		671DDAF8169CB04B00FA2CAC /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 671DDADA169CB04B00FA2CAC /* Default@2x.png */; };
 		671DDAF9169CB04B00FA2CAC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 671DDADB169CB04B00FA2CAC /* InfoPlist.strings */; };
 		671DDAFA169CB04B00FA2CAC /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 671DDADD169CB04B00FA2CAC /* MainStoryboard.storyboard */; };
-		671DDAFB169CB04B00FA2CAC /* ExampleMosaicUI-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 671DDADF169CB04B00FA2CAC /* ExampleMosaicUI-Info.plist */; };
 		671DDAFC169CB04B00FA2CAC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 671DDAE1169CB04B00FA2CAC /* main.m */; };
 		671DDAFD169CB04B00FA2CAC /* 001.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 671DDAE4169CB04B00FA2CAC /* 001.jpg */; };
 		671DDAFE169CB04B00FA2CAC /* 002.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 671DDAE5169CB04B00FA2CAC /* 002.jpg */; };
@@ -298,7 +297,6 @@
 				671DDAF8169CB04B00FA2CAC /* Default@2x.png in Resources */,
 				671DDAF9169CB04B00FA2CAC /* InfoPlist.strings in Resources */,
 				671DDAFA169CB04B00FA2CAC /* MainStoryboard.storyboard in Resources */,
-				671DDAFB169CB04B00FA2CAC /* ExampleMosaicUI-Info.plist in Resources */,
 				671DDAFD169CB04B00FA2CAC /* 001.jpg in Resources */,
 				671DDAFE169CB04B00FA2CAC /* 002.jpg in Resources */,
 				671DDAFF169CB04B00FA2CAC /* 003.jpg in Resources */,
