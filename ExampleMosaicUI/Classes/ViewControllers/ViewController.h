@@ -12,6 +12,8 @@
 
 @interface ViewController : UIViewController <MosaicViewDelegateProtocol>{
     __weak IBOutlet MosaicView *mosaicView;
+    UIImageView *snapshotBeforeRotation;
+    UIImageView *snapshotAfterRotation;
 }
 
 @end
