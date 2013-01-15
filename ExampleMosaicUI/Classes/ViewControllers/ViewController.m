@@ -69,6 +69,10 @@ static UIImageView *captureSnapshotOfView(UIView *targetView){
     mosaicView.hidden = NO;
 }
 
+-(BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation{
+    return YES;
+}
+
 #pragma mark - MosaicViewDelegateProtocol
 
 -(void)mosaicViewDidTap:(MosaicDataView *)aModule{
