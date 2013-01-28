@@ -12,7 +12,7 @@
 #define kMosaicDataViewFont @"Helvetica-Bold"
 
 @implementation MosaicDataView
-@synthesize delegate, mosaicView;
+@synthesize mosaicView;
 
 #pragma mark - Private
 
@@ -138,15 +138,15 @@
 }
 
 -(void)simpleTapReceived:(id)sender{
-    if ([delegate respondsToSelector:@selector(mosaicViewDidTap:)]){
-        [delegate mosaicViewDidTap:self];
+    if (self.mosaicView.delegate && [self.mosaicView.delegate respondsToSelector:@selector(mosaicViewDidTap:)]){
+        [self.mosaicView.delegate mosaicViewDidTap:self];
     }
     self.mosaicView.selectedDataView = self;    
 }
 
 -(void)doubleTapReceived:(id)sender{
-    if ([delegate respondsToSelector:@selector(mosaicViewDidDoubleTap:)]){
-        [delegate mosaicViewDidDoubleTap:self];        
+    if (self.mosaicView.delegate && [self.mosaicView.delegate respondsToSelector:@selector(mosaicViewDidDoubleTap:)]){
+        [self.mosaicView.delegate mosaicViewDidDoubleTap:self];        
     }
 }
 

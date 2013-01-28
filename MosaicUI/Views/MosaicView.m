@@ -223,7 +223,6 @@
                         
             lastModuleView = [[MosaicDataView alloc] initWithFrame:mosaicModuleRect];
             lastModuleView.module = aModule;
-            lastModuleView.delegate = self.delegate;
             lastModuleView.mosaicView = self;
             
             [scrollView addSubview:lastModuleView];
