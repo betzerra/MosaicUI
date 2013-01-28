@@ -25,8 +25,8 @@
     BOOL isFirstLayoutTime;
 }
 
-@property (strong) id <MosaicViewDatasourceProtocol> datasource;
-@property (strong) id <MosaicViewDelegateProtocol> delegate;
+@property (weak) id <MosaicViewDatasourceProtocol> datasource;
+@property (weak) id <MosaicViewDelegateProtocol> delegate;
 @property (strong) MosaicDataView *selectedDataView;
 
 @end
