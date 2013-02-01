@@ -29,4 +29,6 @@
 @property (weak) id <MosaicViewDelegateProtocol> delegate;
 @property (strong) MosaicDataView *selectedDataView;
 
+-(void) refresh;
+
 @end

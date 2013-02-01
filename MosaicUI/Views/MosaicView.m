@@ -251,9 +251,13 @@
     [self setup];
 }
 
-- (void)layoutSubviews{
+- (void)refresh{
     NSArray *mosaicElements = [self.datasource mosaicElements];
     [self setupLayoutWithMosaicElements:mosaicElements];
+}
+
+- (void)layoutSubviews{
+    [self refresh];
     [super layoutSubviews];
 }
 
