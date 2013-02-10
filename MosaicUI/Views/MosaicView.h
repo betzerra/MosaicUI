@@ -21,8 +21,6 @@
     
     NSInteger _maxElementsX;
     NSInteger _maxElementsY;
-
-    BOOL isFirstLayoutTime;
 }
 
 @property (weak) id <MosaicViewDatasourceProtocol> datasource;

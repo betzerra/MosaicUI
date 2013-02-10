@@ -27,9 +27,7 @@
     //  Add scrollview and set its position and size using autolayout constraints
     scrollView = [[UIScrollView alloc] initWithFrame:self.bounds];
     scrollView.backgroundColor = [UIColor blackColor];
-    [self addSubview:scrollView];
-    
-    isFirstLayoutTime = YES;
+    [self addSubview:scrollView];    
 }
 
 - (BOOL)doesModuleWithCGSize:(CGSize)aSize fitsInCoord:(CGPoint)aPoint{
