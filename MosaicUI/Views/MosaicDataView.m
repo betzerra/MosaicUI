@@ -101,7 +101,15 @@
     titleLabel.text = module.title;
     titleLabel.font = [self fontWithModuleSize:module.size];
     
-    CGSize newSize = [module.title sizeWithFont:titleLabel.font constrainedToSize:titleLabel.frame.size];
+    CGSize newSize;
+    if ([[[UIDevice currentDevice] systemVersion] compare:@"7.0" options:NSNumericSearch] != NSOrderedAscending) {
+        newSize = [module.title boundingRectWithSize:titleLabel.frame.size
+                                                     options:NSStringDrawingUsesLineFragmentOrigin
+                                                  attributes:@{NSFontAttributeName:titleLabel.font}
+                                                     context:nil];
+    } else {
+        newSize = [module.title sizeWithFont:titleLabel.font constrainedToSize:titleLabel.frame.size];
+    }
     CGRect newRect = CGRectMake(marginLeft,
                                 self.frame.size.height - newSize.height - marginBottom,
                                 newSize.width,
