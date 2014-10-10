@@ -1,5 +1,5 @@
 #Mosaic UI
-**IMPORTANT: I'm developing a new UI very similar to MosaicUI based on UICollectionView. Take a look at https://github.com/TwoTinedFork/MosaicLayout**
+**IMPORTANT: I'm developing a new UI very similar to MosaicUI based on UICollectionView. Take a look at https://github.com/betzerra/MosaicLayout**
 
 **MosaicUI** is a tiled UI for iOS that automatic layouts according to the elements' sizes.
 
