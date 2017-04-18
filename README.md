@@ -1,4 +1,4 @@
-#Mosaic UI
+# Mosaic UI
 **IMPORTANT: I'm developing a new UI very similar to MosaicUI based on UICollectionView. Take a look at https://github.com/betzerra/MosaicLayout**
 
 **MosaicUI** is a tiled UI for iOS that automatic layouts according to the elements' sizes.
@@ -7,13 +7,13 @@
 
 ![Portrait](http://www.betzerra.com.ar/wp-content/uploads/2013/01/mosaic_screenshot_002.png)
 
-##DataSource Delegate
+## DataSource Delegate
 To work properly, **MosaicView** needs a class that implements **MosaicViewDatasourceProtocol** 
 ```objc
 -(NSArray *)mosaicElements; // Array containing MosaicData objects
 ```
 
-##MosaicViewDelegate
+## MosaicViewDelegate
 Ok, so now you've got the **MosaicView** working but you'll probably want something to happen when someone taps an element. In that case you'll need a class that implements **MosaicViewDelegateProtocol**
 
 ```objc
@@ -21,13 +21,13 @@ Ok, so now you've got the **MosaicView** working but you'll probably want someth
 -(void)mosaicViewDidDoubleTap:(MosaicDataView *)aModule;
 ```
 
-##Look and feel
+## Look and feel
 You can customize how it looks by overriding the **MosaicDataView** class.
 
-##Feedback is welcome
+## Feedback is welcome
 Help me to improve **MosaicUI** and tell me what do you think about it
 
 Follow me on twitter at **@betzerra** or email me at ezequiel@betzerra.com.ar
 
-##License
+## License
 This project is under MIT License. See LICENSE file for more information.
